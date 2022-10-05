@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using eAgenda.Dominio.ModuloAutenticacao;
-using eAgenda.Aplicacao.ModuloAutenticacao;
-using eAgenda.Webapi.ViewModels.ModuloAutenticacao;
+using eAgenda.Aplicacao.ModuloAutenticacao; 
+using eAgenda.Webapi.ViewModels.ModuloAutenticacao; 
 
 namespace eAgenda.Webapi.Controllers
 {
@@ -17,7 +17,7 @@ namespace eAgenda.Webapi.Controllers
     public class AutenticacaoController : eAgendaControllerBase
     {
         private readonly ServicoAutenticacao servicoAutenticacao;
-        private readonly IMapper mapeadorUsuario;
+        private readonly IMapper mapeadorUsuario; 
 
         public AutenticacaoController(ServicoAutenticacao servicoAutenticacao, IMapper mapeadorUsuario)
         {
